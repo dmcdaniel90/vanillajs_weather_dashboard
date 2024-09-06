@@ -5,9 +5,8 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "prettier": "npx prettier --write .",
-    "dev": "lite-server",
-    "server": "node --env-file=.env src/server/server.js"
+    "prettier": "npx prettier --write src/**/*",
+    "start": "node --env-file=.env src/server/server.js"
   },
   "keywords": [],
   "author": "",
@@ -16,6 +15,7 @@
     "prettier": "^3.3.3"
   },
   "dependencies": {
-    "express": "^4.19.2"
+    "express": "^4.19.2",
+    "ky": "^1.7.2"
   }
 }
